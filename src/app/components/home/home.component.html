@@ -1,0 +1,3 @@
+<app-alert *ngIf="newMessage" [newMessage]="newMessage"></app-alert>
+<app-search-user (newAppMessage)="onNewMessage($event)"></app-search-user>
+

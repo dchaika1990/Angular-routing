@@ -1,3 +1,5 @@
-<div class="alert alert-success">
-  {{ newMessage }}
+<div class="alert  mt-5 col-6 ml-auto mr-auto"
+  [ngClass]="{'alert-success': !newMessage.error, 'alert-danger': newMessage.error}"
+>
+  {{ newMessage.message }}
 </div>

@@ -1,0 +1,15 @@
+<div class="container col-6">
+  <table class="table">
+    <tr>
+      <th>Login</th>
+      <th>Avatar</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>{{ userInfo.login }}</td>
+      <td><img src="{{ userInfo.avatar_url }}" height="20px" width="20px" alt=""></td>
+      <td><a href="{{ userInfo.html_url }}">home page</a></td>
+    </tr>
+  </table>
+  <button class="btn btn-primary" routerLink="/about">About app</button>
+</div>
